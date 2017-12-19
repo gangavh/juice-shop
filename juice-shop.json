@@ -1,0 +1,18 @@
+{
+    "family": "juice-shop",
+    "containerDefinitions": [
+        {
+            "image": "ganagvh/hackathon/juice-shop:v_%BUILD_NUMBER%",
+            "name": "juice-shop",
+            "cpu": 10,
+            "memory": 256,
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": 3000,
+                    "hostPort": 80
+                }
+            ]
+        }
+    ]
+}
